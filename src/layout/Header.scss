@@ -1,0 +1,11 @@
+$color-white: white;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: $color-white;
+  text-align: center;
+  padding: 20px;
+}

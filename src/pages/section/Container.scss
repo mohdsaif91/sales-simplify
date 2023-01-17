@@ -1,0 +1,71 @@
+@import "../../variable.scss";
+
+.column {
+  width: 100%;
+  padding: 16px;
+  min-height: 250px;
+  border: 1px solid $card-border-color;
+  border-radius: 4px;
+}
+
+.cards-column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.wall-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.add-icon {
+  padding-top: 8px;
+  margin-left: 8px;
+}
+
+.cards-row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.cards-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .wall-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  
+.cards-column {
+
+  width: 50%;
+
+
+}
+}
+
+.align-item-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container-title {
+   font-size: 22px;
+  }
+  .align-item-center{
+    justify-content: space-between;
+  }
+ 
+ }
+
+

@@ -1,0 +1,52 @@
+@import "../../variable.scss";
+
+.cards-column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.card-title {
+  // color: $card-font-color;
+}
+
+.cards-row {
+  margin: 0 -5px;
+}
+
+.card-1 {
+  background-color: $card1;
+}
+.card-2 {
+  background-color: $card2;
+}
+.card-3 {
+  background-color: $card3;
+}
+.card-4 {
+  background-color: $card4;
+}
+
+/* Clear floats after the columns */
+.cards-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .cards-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 $card-box-shadow;
+  padding: 16px;
+  text-align: center;
+  border-radius: 4px;
+  color: $card-font-color;
+}
